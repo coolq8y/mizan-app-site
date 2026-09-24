@@ -18,8 +18,8 @@ Then open `http://localhost:8080`.
 ## Cloudflare Pages
 
 - Framework preset: `None`
-- Build command: leave blank
-- Build output directory: `/`
+- Build command: `exit 0`
+- Build output directory: `.`
 - Root directory: `/`
 
 After deployment, verify these public URLs:
