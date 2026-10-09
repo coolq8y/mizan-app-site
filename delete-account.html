@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="حذف حساب ميزان - الذهب والزكاة (المطوّر CooLQ8y، الحزمة com.faisal.Mizan). Delete your Mizan account — developer CooLQ8y, package com.faisal.Mizan.">
+  <title>حذف حساب ميزان - الذهب والزكاة | Delete Your Mizan Account — CooLQ8y</title>
+  <link rel="icon" href="assets/app-icon.png"><link rel="stylesheet" href="styles.css">
+  <style>
+    .deletion-identity { margin: 18px auto 0; display: inline-grid; grid-template-columns: auto auto; gap: 4px 14px; text-align: start; padding: 14px 18px; border: 1px solid var(--line); border-radius: 16px; background: var(--card); }
+    .deletion-identity dt { color: var(--muted); }
+    .deletion-identity dd { margin: 0; font-weight: 700; color: var(--text); }
+    .deletion-identity bdi { unicode-bidi: isolate; }
+    .deletion-actions { text-align: center; margin: 26px 0 8px; }
+    .deletion-button { display: inline-block; padding: 14px 26px; border-radius: 999px; background: var(--gold); color: #06142c; font-weight: 800; text-decoration: none; font-size: 1.05rem; box-shadow: var(--shadow); }
+    .deletion-button:hover, .deletion-button:focus-visible { background: var(--gold-bright); }
+    .deletion-actions p { color: var(--muted); margin: 10px 0 0; }
+    .deletion-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 26px; }
+    .deletion-columns article { min-width: 0; }
+    .deletion-columns h2 { margin-top: 0; }
+    @media (max-width: 760px) { .deletion-columns { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header class="topbar"><div class="shell topbar-inner"><a class="brand" href="index.html"><img src="assets/app-icon.png" alt=""><span data-lang="ar">ميزان</span><span data-lang="en" hidden>Mizan</span></a><nav class="nav"><a href="support.html"><span data-lang="ar">الدعم</span><span data-lang="en" hidden>Support</span></a><a href="privacy.html"><span data-lang="ar">الخصوصية</span><span data-lang="en" hidden>Privacy</span></a><button class="lang-button" type="button" data-language-toggle>English</button></nav></div></header>
+  <main class="page shell">
+    <div class="page-header">
+      <img src="assets/app-icon.png" alt="">
+      <h1>حذف حساب ميزان - الذهب والزكاة<br><span lang="en" dir="ltr">Delete Your Mizan Account</span></h1>
+      <dl class="deletion-identity">
+        <dt>التطبيق · App</dt><dd><bdi>ميزان - الذهب والزكاة</bdi> · <bdi dir="ltr">Mizan</bdi></dd>
+        <dt>المطوّر · Developer</dt><dd><bdi dir="ltr">CooLQ8y</bdi></dd>
+        <dt>الحزمة · Package</dt><dd><bdi dir="ltr">com.faisal.Mizan</bdi></dd>
+      </dl>
+    </div>
+
+    <div class="deletion-actions">
+      <a class="deletion-button" href="mailto:trymizanapp@gmail.com?subject=Delete%20Mizan%20Account&amp;body=Please%20delete%20my%20Mizan%20account%20(com.faisal.Mizan).%0AAccount%20email%3A%20%0ASign-in%20method%20(email%2C%20Apple%2C%20Google%2C%20Facebook%20or%20X)%3A%20%0A%0A%D8%A3%D8%B1%D8%AC%D9%88%20%D8%AD%D8%B0%D9%81%20%D8%AD%D8%B3%D8%A7%D8%A8%D9%8A%20%D9%81%D9%8A%20%D9%85%D9%8A%D8%B2%D8%A7%D9%86.">طلب حذف الحساب · <span lang="en">Request Account Deletion</span></a>
+      <p>trymizanapp@gmail.com — لا يلزم تسجيل الدخول أو تثبيت التطبيق · No sign-in or app installation needed</p>
+    </div>
+
+    <div class="policy deletion-columns">
+      <article lang="ar" dir="rtl">
+        <h2>طريقتان لحذف حسابك</h2>
+        <h3>الطريقة 1 — من داخل تطبيق ميزان</h3>
+        <p>افتح ميزان ← <strong>الإعدادات ← الحساب ← حذف الحساب</strong>. قد يُطلب منك تسجيل الدخول مجددًا بالطريقة نفسها لتأكيد هويتك. يتم الحذف فورًا ولا يمكن التراجع عنه.</p>
+        <h3>الطريقة 2 — من دون التطبيق</h3>
+        <p>أرسل طلبًا من البريد المرتبط بحسابك إلى <a href="mailto:trymizanapp@gmail.com?subject=Delete%20Mizan%20Account">trymizanapp@gmail.com</a> بعنوان «Delete Mizan Account» (أو اضغط زر «طلب حذف الحساب» أعلاه). سنؤكد استلام الطلب، وقد نطلب منك تحققًا محدودًا من ملكية الحساب، ثم نحذف البيانات نفسها المذكورة أدناه.</p>
+        <h2>ما يُحذف</h2>
+        <ul>
+          <li>جميع قطع الخزنة (مع أي صور مرفقة بها).</li>
+          <li>إعدادات الزكاة وقطع الزكاة.</li>
+          <li>تنبيهات السعر ورموز الإشعارات الخاصة بأجهزتك.</li>
+          <li>ثم حساب الدخول نفسه (Firebase Authentication).</li>
+        </ul>
+        <p>لا نحتفظ بنسخ احتياطية من قاعدة البيانات. تُكمل Google Cloud إزالة البيانات المحذوفة من أنظمتها وفق إجراءاتها المعتادة.</p>
+        <h2>ما قد يبقى</h2>
+        <ul>
+          <li>البيانات المحفوظة على جهازك فقط (مثل إعدادات التطبيق) حتى تحذف التطبيق من جهازك.</li>
+          <li>بيانات التحليلات غير مرتبطة بحسابك، فلا يمكن تحديدها وحذفها لكل حساب؛ تحذفها Google Analytics تلقائيًا خلال 14 شهرًا كحد أقصى.</li>
+          <li>البيانات لدى Google AdMob ومزوّدي تسجيل الدخول (Apple وGoogle وFacebook وX) تخضع لسياسات الخصوصية الخاصة بهم.</li>
+        </ul>
+        <p>التفاصيل الكاملة في <a href="privacy.html">سياسة الخصوصية</a>.</p>
+        <p class="notice">لا ترسل كلمة المرور أو رموز تسجيل الدخول أو بيانات البطاقة عبر البريد.</p>
+      </article>
+
+      <article lang="en" dir="ltr">
+        <h2>Two ways to delete your account</h2>
+        <h3>Method 1 — In the Mizan app</h3>
+        <p>Open Mizan → <strong>Settings → Account → Delete account</strong>. You may be asked to sign in again with the same method to confirm it is you. Deletion takes effect immediately and cannot be undone.</p>
+        <h3>Method 2 — Without the app</h3>
+        <p>Email <a href="mailto:trymizanapp@gmail.com?subject=Delete%20Mizan%20Account">trymizanapp@gmail.com</a> from the address associated with your account with the subject “Delete Mizan Account” (or use the “Request Account Deletion” button above). We will acknowledge the request, may ask you to verify that you own the account, and then delete the same data listed below.</p>
+        <h2>What is deleted</h2>
+        <ul>
+          <li>All Vault items (including any attached photos).</li>
+          <li>Your Zakat settings and Zakat items.</li>
+          <li>Your price alerts and your devices’ notification tokens.</li>
+          <li>Then your sign-in account itself (Firebase Authentication).</li>
+        </ul>
+        <p>We do not keep database backups. Google Cloud completes the removal of deleted data from its systems under its standard process.</p>
+        <h2>What may remain</h2>
+        <ul>
+          <li>Data stored only on your device (such as app settings) until you uninstall the app.</li>
+          <li>Analytics data, which is not linked to your account and so cannot be found and deleted per account; Google Analytics deletes it automatically within at most 14 months.</li>
+          <li>Data held by Google AdMob and by sign-in providers (Apple, Google, Facebook, X) under their own privacy policies.</li>
+        </ul>
+        <p>Full details are in the <a href="privacy.html">Privacy Policy</a>.</p>
+        <p class="notice">Never email your password, sign-in codes, or payment card details.</p>
+      </article>
+    </div>
+  </main>
+  <footer class="footer"><div class="shell footer-inner"><span>© 2026 Mizan · CooLQ8y</span><div class="footer-links"><a href="index.html"><span data-lang="ar">الرئيسية</span><span data-lang="en" hidden>Home</span></a><a href="support.html"><span data-lang="ar">الدعم</span><span data-lang="en" hidden>Support</span></a><a href="privacy.html"><span data-lang="ar">الخصوصية</span><span data-lang="en" hidden>Privacy</span></a></div></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
