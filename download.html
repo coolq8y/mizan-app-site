@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    // Phones and tablets are normally redirected by functions/download.js before this page loads.
+    // This catches iPads that present themselves as desktop Safari (no iPad token in the
+    // User-Agent, but a touch screen) and any phone that reached the page anyway. Crawlers stay.
+    // Keep the patterns and store URLs in sync with functions/download.js.
+    (function () {
+      var ua = navigator.userAgent || '';
+      if (/bot\/\d|crawler|spider|facebookexternalhit|facebookcatalog|Facebot|meta-externalagent|WhatsApp\/|TelegramBot|Twitterbot|Slackbot|Discordbot|LinkedInBot|SkypeUriPreview|Snap URL Preview|kakaotalk-scrap|Embedly|Iframely|vkShare|redditbot|Pinterest\/0\.|Bluesky|Mastodon\/|BingPreview|AdsBot-Google|Storebot-Google|Mediapartners-Google|Google-InspectionTool|GoogleOther|Applebot/i.test(ua)
+          || /Windows Phone/i.test(ua)) return;
+      var apple = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+      var store = apple ? 'https://apps.apple.com/us/app/id6815504183'
+        : /Android/i.test(ua) ? 'https://play.google.com/store/apps/details?id=com.faisal.Mizan' : null;
+      if (store) location.replace(store);
+    })();
+  </script>
+  <title>ميزان | أسعار الذهب وحساب الزكاة</title>
+  <meta name="description" content="تابع أسعار الذهب، احسب قيمة ذهبك ومصنعيته وزكاته، ونظّم مشترياتك بسهولة مع تطبيق ميزان.">
+  <link rel="canonical" href="https://mizan-app-site.pages.dev/download">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ميزان - الذهب والزكاة">
+  <meta property="og:locale" content="ar_AR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:url" content="https://mizan-app-site.pages.dev/download">
+  <meta property="og:title" content="ميزان | أسعار الذهب وحساب الزكاة">
+  <meta property="og:description" content="تابع أسعار الذهب، احسب قيمة ذهبك ومصنعيته وزكاته، ونظّم مشترياتك بسهولة مع تطبيق ميزان.">
+  <meta property="og:image" content="https://mizan-app-site.pages.dev/assets/mizan-og.jpg">
+  <meta property="og:image:secure_url" content="https://mizan-app-site.pages.dev/assets/mizan-og.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="شعار ميزان الذهبي على خلفية كحلية: ميزان - الذهب والزكاة">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ميزان | أسعار الذهب وحساب الزكاة">
+  <meta name="twitter:description" content="تابع أسعار الذهب، احسب قيمة ذهبك ومصنعيته وزكاته، ونظّم مشترياتك بسهولة مع تطبيق ميزان.">
+  <meta name="twitter:image" content="https://mizan-app-site.pages.dev/assets/mizan-og.jpg">
+  <meta name="twitter:image:alt" content="شعار ميزان الذهبي على خلفية كحلية: ميزان - الذهب والزكاة">
+  <meta name="apple-itunes-app" content="app-id=6815504183">
+  <meta name="theme-color" content="#06142c">
+  <link rel="icon" href="/assets/app-icon-256.png">
+  <link rel="apple-touch-icon" href="/assets/app-icon-256.png">
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .download { padding: 56px 0 72px; }
+    .download-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, .7fr);
+      gap: 40px;
+      align-items: center;
+      padding: 48px;
+      border: 1px solid var(--line);
+      border-radius: 32px;
+      background: linear-gradient(160deg, rgba(18, 43, 74, .92), rgba(9, 25, 48, .92));
+      box-shadow: var(--shadow);
+    }
+    .download-icon {
+      display: block;
+      width: 112px;
+      height: 112px;
+      border-radius: 26px;
+      border: 1px solid rgba(221, 184, 111, .35);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, .4);
+    }
+    .download-intro h1 {
+      margin: 22px 0 0;
+      font-size: clamp(2.8rem, 7vw, 4.4rem);
+      line-height: 1.15;
+      color: var(--gold-bright);
+      background: linear-gradient(180deg, #f7de98, #ddb86f 55%, #c99b48);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .download-subtitle { margin: 8px 0 0; font-size: clamp(1.15rem, 2.6vw, 1.45rem); font-weight: 750; }
+    .download-lead { margin: 14px 0 0; max-width: 34em; color: var(--muted); font-size: 1.08rem; }
+    .store-buttons { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 30px; }
+    .store-button {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-height: 68px;
+      padding: 12px 20px;
+      border-radius: 18px;
+      color: #07162e;
+      text-decoration: none;
+      background: linear-gradient(135deg, var(--gold-bright), #c99b48);
+      box-shadow: 0 12px 30px rgba(201, 155, 72, .2);
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .store-button:hover { transform: translateY(-1px); box-shadow: 0 16px 36px rgba(201, 155, 72, .3); }
+    .store-button:focus-visible { outline: 3px solid var(--text); outline-offset: 3px; }
+    .store-button svg { flex: none; width: 26px; height: 26px; }
+    .store-button strong { display: block; font-size: 1.05rem; line-height: 1.35; }
+    .store-button small { display: block; font-size: .85rem; font-weight: 650; opacity: .72; line-height: 1.4; }
+    .download-qr {
+      padding: 28px 22px;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: 24px;
+      background: rgba(4, 16, 36, .5);
+    }
+    .qr-tile {
+      display: inline-block;
+      padding: 12px;
+      border-radius: 20px;
+      background: #fff;
+      box-shadow: 0 0 0 1px var(--line), 0 16px 40px rgba(0, 0, 0, .35);
+    }
+    .qr-tile img { display: block; width: 188px; height: 188px; }
+    .download-qr h2 { margin: 18px 0 4px; font-size: 1.1rem; }
+    .download-qr p { margin: 0; color: var(--muted); font-size: .95rem; }
+    .download-qr .qr-url { margin-top: 10px; color: var(--gold); font-size: .85rem; direction: ltr; unicode-bidi: isolate; word-break: break-all; }
+    @media (max-width: 860px) {
+      .download-card { grid-template-columns: 1fr; padding: 32px 22px; text-align: center; }
+      .download-icon { margin: 0 auto; }
+      .download-lead { margin-inline: auto; }
+      .store-buttons { grid-template-columns: 1fr; max-width: 420px; margin-inline: auto; }
+    }
+    @media (max-width: 760px) {
+      .download { padding: 24px 0 48px; }
+      .download-card { border-radius: 24px; gap: 28px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .store-button { transition: none; }
+      .store-button:hover { transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a class="brand" href="/"><img src="/assets/app-icon-256.png" alt=""><span data-lang="ar">ميزان</span><span data-lang="en" hidden>Mizan</span></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="/support"><span data-lang="ar">الدعم</span><span data-lang="en" hidden>Support</span></a>
+        <a href="/privacy"><span data-lang="ar">الخصوصية</span><span data-lang="en" hidden>Privacy</span></a>
+        <button class="lang-button" type="button" data-language-toggle>English</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="download shell">
+    <section class="download-card">
+      <div class="download-intro">
+        <img class="download-icon" src="/assets/app-icon-256.png" width="112" height="112" alt="شعار ميزان">
+        <h1><span data-lang="ar">ميزان</span><span data-lang="en" hidden>Mizan</span></h1>
+        <p class="download-subtitle"><span data-lang="ar">أسعار الذهب وحساب الزكاة</span><span data-lang="en" hidden>Gold prices &amp; Zakat</span></p>
+        <p class="download-lead" data-lang="ar">كل ما تحتاجه لمتابعة أسعار الذهب، حساب المصنعية، إدارة مشترياتك وحساب زكاتك في تطبيق واحد.</p>
+        <p class="download-lead" data-lang="en" hidden>Everything you need to follow gold prices, estimate workmanship, manage your purchases and calculate your Zakat, in one app.</p>
+        <div class="store-buttons">
+          <a class="store-button" href="https://apps.apple.com/us/app/id6815504183">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+            <span><strong><span data-lang="ar">تحميل من App Store</span><span data-lang="en" hidden>Download on the App Store</span></strong><small><span data-lang="ar">لأجهزة iPhone و iPad</span><span data-lang="en" hidden>For iPhone and iPad</span></small></span>
+          </a>
+          <a class="store-button" href="https://play.google.com/store/apps/details?id=com.faisal.Mizan">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+            <span><strong><span data-lang="ar">تحميل من Google Play</span><span data-lang="en" hidden>Get it on Google Play</span></strong><small><span data-lang="ar">لأجهزة Android</span><span data-lang="en" hidden>For Android devices</span></small></span>
+          </a>
+        </div>
+      </div>
+      <aside class="download-qr">
+        <div class="qr-tile"><img src="/assets/download-qr.svg" width="188" height="188" alt="رمز QR لرابط تحميل ميزان https://mizan-app-site.pages.dev/download"></div>
+        <h2><span data-lang="ar">امسح الرمز بجوالك</span><span data-lang="en" hidden>Scan with your phone</span></h2>
+        <p data-lang="ar">افتح الكاميرا ووجّهها نحو الرمز، وسيفتح لك المتجر المناسب لجهازك.</p>
+        <p data-lang="en" hidden>Point your camera at the code and the right store for your device opens.</p>
+        <p class="qr-url">mizan-app-site.pages.dev/download</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="shell footer-inner"><span>© 2026 Mizan</span><div class="footer-links"><a href="/"><span data-lang="ar">الرئيسية</span><span data-lang="en" hidden>Home</span></a><a href="/privacy"><span data-lang="ar">الخصوصية</span><span data-lang="en" hidden>Privacy</span></a><a href="/support"><span data-lang="ar">الدعم</span><span data-lang="en" hidden>Support</span></a></div></div></footer>
+  <script src="/script.js"></script>
+</body>
+</html>
